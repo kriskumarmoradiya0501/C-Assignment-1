@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_4
+    {
+        static void Main(string[] args) {
+            int a = 1;
+            int b = 2;
+
+            Console.WriteLine("A = " + a + " B = " + b);
+
+            a=a+b;
+            b=a-b;
+            a=a-b;
+
+            Console.WriteLine("A = " + a + " B = " + b);
+
+            Console.ReadKey();
+        }
+    }
+}
