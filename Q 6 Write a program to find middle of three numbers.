@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_6
+    {
+        static void Main(string[] args)
+        {
+            // Q 7 
+            Console.Write("Enter Number 1: ");
+            float num1 = float.Parse(Console.ReadLine());
+            Console.Write("Enter Number 2: ");
+            float num2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Summation : "+(num1+num2));
+            Console.WriteLine("Multiplication : " + (num1 * num2));
+            Console.WriteLine("Division : " + (num1 / num2));
+            Console.WriteLine("Subtraction : " + (num1 - num2));
+
+            
+            
+            Console.ReadKey();
+
+        }
+    }
+}
