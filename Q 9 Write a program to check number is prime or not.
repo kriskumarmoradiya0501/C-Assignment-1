@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_9
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter number for what you want to check Prime of not . ");
+            int num = int.Parse(Console.ReadLine());
+            int flage = 0;
+
+            for (int i = 2; i < num; i++)
+            {
+                if (num % i == 0)
+                {
+                    flage = 1;
+                    break;
+                }
+                else
+                {
+                    flage = 0;
+                }
+            }
+            if (flage == 1)
+            {
+                Console.WriteLine(num + " is not prime Number");
+            }
+            else
+            {
+                Console.WriteLine(num + " is prime number");
+            }
+            Console.ReadLine();
+        }
+    }
+}
