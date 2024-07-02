@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_17
+    {
+        static void Main(string[] args)
+        {
+            string str1 = "Hello kriskumar";
+            string str2 = "moradiya";
+
+            string copystr = String.Copy(str1);
+            Console.WriteLine(copystr);
+
+            Console.WriteLine(str1.ToUpper());
+
+            Console.WriteLine(str1.ToLower());
+
+            Console.WriteLine(String.Compare(str1,str2));
+
+            Console.ReadKey();
+        }
+    }
+}
