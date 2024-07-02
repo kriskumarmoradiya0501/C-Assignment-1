@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_14
+    {
+        static void Main(string[] args)
+        {
+            int[] arr1 = { 1, 22, 3, 4, 15, 6, 77, 8, 9, 10};
+            int temp = arr1[0];
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if (temp < arr1[i])
+                {
+                    temp = arr1[i];
+                }
+            }
+            Console.WriteLine(temp + " is Largerst number in array");
+
+            Console.ReadKey();
+        }
+    }
+}
