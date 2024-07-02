@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_2
+    {
+        static void Main(string[] args)
+        {
+            const double PI = 3.1415;
+            Console.Write("Enter Redus value to find area of Circle : ");
+            double r = double.Parse(Console.ReadLine());
+
+            double area = PI * r * r;
+
+            Console.WriteLine("Area of circle is "+area);
+
+            Console.ReadKey();
+
+        }
+    }
+}
