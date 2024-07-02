@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_18
+    {
+        static void Main(string[] args)
+        {
+            int num = int.Parse(args[0]);
+
+            if (num % 2 == 0)
+            {
+                Console.WriteLine(num + " is Even number.");
+            }
+            else
+            {
+                Console.WriteLine(num + " is odd number.");
+            }
+            Console.ReadKey();
+        }
+    }
+}
