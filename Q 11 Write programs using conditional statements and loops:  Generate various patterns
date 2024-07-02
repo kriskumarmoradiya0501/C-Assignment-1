@@ -1,0 +1,78 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_11
+    {
+        static void Main(string[] args)
+        {
+
+            // PATTERN 1
+            for (int i = 1; i <=5; i++)
+            {
+                for (int j = 1; j <=i; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            }
+
+            // PATTERN 2
+
+            for (int i = 1; i <= 5; i++)
+            {
+                for (int j = i; j < 5; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+
+            // PATTERN 3
+
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.Write(" ");
+                for (int j = 8; j>=i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j + "");
+                }
+                if (i != 1)
+                {
+                    for (int j = i-1; j >= 1; j--)
+                    {
+                        Console.Write(j + "");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            // PATTERN 4
+
+            int s = 1;
+            for (int i = 1; i <= 4; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(s+" ");
+                    s++;
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
