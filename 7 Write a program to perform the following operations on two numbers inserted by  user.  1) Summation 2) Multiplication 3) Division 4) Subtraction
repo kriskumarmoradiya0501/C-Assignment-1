@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace college2
+{
+    internal class ass_1_7
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number 1: ");
+            float num1 = float.Parse(Console.ReadLine());
+            Console.Write("Enter Number 2: ");
+            float num2 = float.Parse(Console.ReadLine());
+
+            Console.Write("enter 1 : if you want to add two numbers.\nenter 2 : if you want to Multiplication of two numbers.\nenter 3 : if you want to divide two numbers.\nenter 4 : if you want to subtraction of two numbers.\n Enter your choice : ");
+            int n = int.Parse(Console.ReadLine());
+
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("addition : " + (num1 + num2));
+                    break;
+                case 2:
+                    Console.WriteLine("Multiplication : " + (num1 * num2));
+                    break;
+                case 3:
+                    Console.WriteLine("Division : " + (num1 / num2));
+                    break ;
+                case 4:
+                    Console.WriteLine("Subtraction : " + (num1 - num2));
+                    break;
+                default:
+                    Console.WriteLine("Invalide input.");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
