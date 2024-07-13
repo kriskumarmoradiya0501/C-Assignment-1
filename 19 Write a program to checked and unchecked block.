@@ -16,13 +16,12 @@ namespace college2
 
             int a = int.MaxValue;
             int b = int.MaxValue;
-            // Example of checked block using a function
-            int resultChecked = CheckedAdd(a, b);
-            Console.WriteLine($"Result of checked operation: {resultChecked}");
 
-            // Example of unchecked block using a function
-            int resultUnchecked = UncheckedAdd(a, b);
-            Console.WriteLine($"Result of unchecked operation: {resultUnchecked}");
+            //int tChecked = CheckedAdd(a, b);
+            //Console.WriteLine("Result of checked operation: "+Checked);
+
+            int Unchecked = UncheckedAdd(a, b);
+            Console.WriteLine("Result of unchecked operation:"+ Unchecked);
 
             Console.ReadKey();
 
