@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace college2
+{
+
+    internal class ass_1_19
+    {
+        public static void Main(string[] args)
+        {
+
+            int a = int.MaxValue;
+            int b = int.MaxValue;
+            // Example of checked block using a function
+            int resultChecked = CheckedAdd(a, b);
+            Console.WriteLine($"Result of checked operation: {resultChecked}");
+
+            // Example of unchecked block using a function
+            int resultUnchecked = UncheckedAdd(a, b);
+            Console.WriteLine($"Result of unchecked operation: {resultUnchecked}");
+
+            Console.ReadKey();
+
+        }
+        static int CheckedAdd(int a, int b)
+        {
+            checked
+            {
+                return a + b;
+            }
+        }
+
+        static int UncheckedAdd(int a, int b)
+        {
+            unchecked
+            {
+                return a + b;
+            }
+        }
+    }
+    
+}
